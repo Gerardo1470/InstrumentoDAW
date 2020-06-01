@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.css">
+    <!-- Compiled and minified JavaScript --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Para activar efectos de JavaScript para Menus-->
+    <script> 
+         document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+         });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria Feníx Dorado</title>
+
+    <!-- Imagen de fondo para la pagina web-->
+    <style>
+      body{
+        background-image: url("Images/Lib.jpg");
+      }
+    </style>
+    <!--  Fin de estilo de imagen de fondo -->
+</head>
+<body>
+    
+    <!-- Barra de navegación-->
+      <nav class="nav-extended" style="background-color:#3e2723">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img src ="Images/logo.png" width=70 height=70/>Libreria Feníx Dorado</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+
+          <!-- Menu para dispositivos móviles-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="Extensiones/Objetivo_Empresa.html">Objetivo Empresa</a></li>
+            <li><a href="Extensiones/Productos.html">Productos</a></li>
+            <li><a href="Extensiones/Servicios.html">Servicios</a></li>
+            <li><a href="Extensiones/Ubicación.html">Ubicación</a></li>
+            <li><a href="Extensiones/Compras_Linea.html">Compra en linea</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-content">
+            <!--Menu principal-->
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#carrusel">Los mas vendidos del mes</a></li>
+           <!--<li class="tab"><a href="#colap">Pestaña de pruba</a></li> --> 
+            <li class="tab"><a href="#card">Promociones y Descuentos</a></li>
+            <li class="tab"><a href="#form">Formulario de expectativas</a></li>
+          </ul>
+        </div>
+      </nav>
+          <!-- Menu principal-->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="Extensiones/Objetivo_Empresa.html">Objetivo Empresa</a></li>
+        <li><a href="Extensiones/Productos.html">Productos</a></li>
+        <li><a href="Extensiones/Servicios.html">Servicios</a></li>
+        <li><a href="Extensiones/Ubicación.html">Ubicación</a></li>
+        <li><a href="Extensiones/Compras_Linea.html">Compra en linea</a></li>
+      </ul>
+      <!-- Galeria de imagenes en forma de carrusel-->
+      <div id="carrusel" class="col s12">
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="Images/LR.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="Images/IT.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="Images/MD.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="Images/TJP.png"></a>
+            <a class="carousel-item" href="#five!"><img src="Images/SSLCG.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="Images/TDC.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="Images/Venom.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="Images/DC.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="Images/20K.jpg"></a>
+            <a class="carousel-item" href="#ten!"><img src="Images/DQM.jpg"></a>
+            <a class="carousel-item" href="#eleven!"><img src="Images/JAM.jpg"></a>
+            <a class="carousel-item" href="#twelve!"><img src="Images/PP.jpg"></a>
+            <br>
+            <br>
+            <font color="#ffffff">Ventas de libros y comics en el ultimo mes:</font>
+            <br>
+            <font color="#ffffff">1.- El engaño de la princesa : 500 unidades</font>
+            <br>
+            <font color="#ffffff">2.- IT(Version en Ingles) : 410 unidades</font>
+            <br>
+            <font color="#ffffff">3.- Moby Dick: 362 unidades</font>
+            <br>
+            <font color="#ffffff">4.- Darth Vader #1 : 293 unidades</font>
+            <br>
+            <font color="#ffffff">5.- El hombre invisible: 218 unidades</font>
+            <br>
+            <font color="#ffffff">6.- Te quiero como siempre quise odiarte : 174 unidades</font>
+            <br>
+            <font color="#ffffff">7.- Spiderman: Birth of Venom : 163 unidades</font>
+            <br>
+            <font color="#ffffff">8.- Green Lantern:The Blackest Night 126 unidades</font>
+            <br>
+            <font color="#ffffff">9.- 20,000 leguas de viaje submarino: 104 unidades</font>
+            <br>
+            <font color="#ffffff">10.- Don Quijote de la Mancha : 90 unidades</font>
+            <br>
+            <font color="#ffffff">11.- Juntos a media noche : 84 unidades</font>
+            <br>
+            <font color="#ffffff">12.- Pedro Paramo : 53 unidades</font>
+          </div>
+      </div>
+
+        <!-- Elementos colapsables 
+      <div id="colap" class="col s12">
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+      </div>
+        -->
+      
+        <div id="card" class="container">
+          <center>
+          <link rel="stylesheet" href="Extensiones/Diseño/Cards.css">
+          <!-- Tarjeta 1 -->
+      
+          <div class="card">
+              <img src="Images/EF.jpg">
+              <h4>Explosion Ficcional</h4>
+              <p>Del 7 al 28 de Junio , aprovecha nuestros descuentos del 30% de descuento en todos los 
+                libros de ciiencia ficcion.</p>
+          </div>
+          
+          <!-- Tarjeta 2 -->
+    
+          <div class="card">
+              <img src="Images/Kid.jpg">
+              <h4>Lectura Dominical</h4>
+              <p>Todos los domingos, en la compra de 1 libro infantil, obtienes $50 en el segundo libro de
+                la misma seccion.</p>
+          </div>
+        
+          <!-- Tarjeta 3-->
+         
+          <div class="card">
+            <img src="Images/Love.jpg">
+            <h4>Romanticismo veraniego</h4>
+            <p>Todos los jueves, aprovecha un descuento del 10% de descuento en todos los libros de la 
+              seccion de romance.
+            </p>
+          </div>
+        </center>
+        </div>
+      
+
+      <div id="form" class="col s12">
+          <!--Ejemplo de formulario-->
+        <div class="row">
+        <div class="style">
+          <form class="col s12">
+            
+            <div class="row">
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="nombre" type="text" class="validate" style="color:white;">
+                  <label for="nombre" style="color:white;">Nombre(s)</label>
+                </div>
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="apellido" type="text" class="validate" style="color:white;">
+                  <label for="apellido" style="color:white;">Apellido(s)</label>
+                </div>
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">add_location</i>
+                  <input id="direccion" type="text" class="validate" style="color:white;">
+                  <label for="direccion" style="color:white;">Direccion</label>
+                </div>
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">contact_phone</i>
+                  <input id="phone" type="tel" class="validate" style="color:white;">
+                  <label for="phone" style="color:white;">Numero de celular</label>
+                </div>
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">contact_mail</i>
+                  <input id="mail" type="text" class="validate" style="color:white;">
+                  <label for="mail" style="color:white;">Correo electronico</label>
+                </div>
+          
+                <div class="input-field col s6" style="color:white;">
+                  <i class="material-icons prefix">announcement</i>
+                  <input id="comentario" type="text" class="validate" style="color:white;">
+                  <label for="comentario" style="color:white;">Comentario</label>
+                </div>
+                 
+                <div>
+                  <center>
+                  <input type="submit" value="Enviar Formulario" onclick="return sendForm();" >
+                  </center>
+                </div>
+
+                <div>
+                  <script src="Extensiones/JavaScript/Validacion.js"></script>
+                </div>
+                
+            </div>
+          </form>
+            <div id="error"></div>
+        </div>
+      </div>    
+</body> 
+</html>
